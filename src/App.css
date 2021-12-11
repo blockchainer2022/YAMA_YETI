@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Galano Grotesque SemiBold";
+  src: url(./assets/font/GalanoGrotesqueSemiBold.woff);
+}
+@font-face {
+  font-family: "Roundish Toons", sans-serif;
+  src: url(./assets/font/Roundish-Toons.ttf.woff);
+}
+@font-face {
+  font-family: "Galano Grotesque Regular";
+  src: url(./assets/font/GalanoGrotesqueRegular.woff);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Galano Grotesque Regular";
+  font-size: 20px;
+  /* background-image: url(./assets/Yama_Yeti_4.png);
+  background-size: cover; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roundish Toons", sans-serif;
+}
+body .MuiButtonBase-root {
+  /* font-family: "Roundish Toons", sans-serif; */
+  /* line-height: 1.3; */
+  font-size: 16px;
+}
+.App {
+  text-align: center;
+}
+.main-wrapper {
+  background-color: #010101;
+}
+.hero-section {
+  color: rgba(255, 255, 255, 0.87);
+  /* padding-bottom: 50px; */
+  height: 100vh;
+}
+.hero-section .MuiButton-containedPrimary {
+  background: white;
+  color: black;
+  display: block;
+
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Fixedsys Excelsior 3.01";
+  margin-top: 20px;
+}
+.hero-section .MuiButton-containedPrimary span {
+  font-size: 20px;
+}
+.hero-section .MuiButton-containedPrimary:hover {
+  background-color: #fff;
+}
+.hero-section.no-wallet {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connect-wallet {
+  text-align: center;
+  width: 100%;
+}
+.connect-wallet h1 {
+  font-size: 30px;
+  font-family: "Fixedsys Excelsior 3.01";
+  margin-top: 0;
+}
+
+.wallet-item {
+  display: flex;
+  justify-content: space-between;
+}
+.wallet-content .MuiButton-contained {
+  font-family: "Fixedsys Excelsior 3.01";
+}
+.wallet-content p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-size: 10px;
+}
+
+.wallet-content .MuiButtonBase-root span {
+  justify-content: center;
+}
+.wallet-item {
+  font-size: 18px;
+}
+.MuiDialogContent-root
+  .MuiList-root.MuiList-padding
+  > .MuiListItem-root:not(:first-child)
+  > select {
+  display: none;
+}
+
+.MuiList-root.MuiList-padding > .MuiListItem-root:nth-child(n + 2) > select {
+  display: none;
+}
