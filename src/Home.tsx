@@ -25,6 +25,7 @@ import {
 import * as dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
 import customParseFormat from 'dayjs/plugin/customParseFormat'
+import HeaderImage from "./assets/Yama Yeti@2x.png"
 const ConnectButton = styled(WalletDialogButton)`
 
 `;
@@ -75,7 +76,7 @@ const useStyles = makeStyles((theme)=>({
    "&  .MuiButton-contained":{
     fontFamily: "Roundish Toons, sans-serif",
      fontSize:"14px",
-     backgroundColor:"#FF7900",
+     backgroundColor:"#56088C",
      color:"white",
       borderRadius:20,
       "&:hover":{
@@ -88,6 +89,10 @@ const useStyles = makeStyles((theme)=>({
     }
 
    }
+  },
+  logo:{
+      paddingTop:"100px",
+      paddingBottom:"30px"
   },
   walletWrapper:{
     maxWidth:"500px",
@@ -102,12 +107,18 @@ const useStyles = makeStyles((theme)=>({
     ,"& a":{
       display:"block",
       marginLeft:10
+
+      ,"& img":{
+        boxShadow:"0 5px 5px rgba(0,0,0,0.5)",
+        borderRadius:"20px"
+      }
     }
   },
   bottom:{
     textAlign:"center",
     marginTop:"40px",
     marginBottom:"50px",
+    color:"#56088C",
     "& h6":{
         fontSize:"24px",
         marginBottom:"0",
@@ -290,9 +301,12 @@ const Home = (props: HomeProps) => {
     <>
     <main className="main-wrapper">
       <div className={`hero-section`}>
-    <Header/>  
+    {/* <Header/>   */}
       <Container className={classes.root}>
-        <h1>Yama Yeti </h1>
+        <div className={classes.logo}>  
+          <img src={HeaderImage} alt="" />
+        </div>
+        {/* <h1>Yama Yeti </h1> */}
         <p>Yama Yeti NFT Collection.</p>   
 
        <div className={classes.icon}>
@@ -360,7 +374,7 @@ const Home = (props: HomeProps) => {
    
           <div className={classes.bottom}>
             <h6>Minting cost?</h6>
-            <p>0.777 sol for all 7777 unit</p>
+            <p>0.05 sol for all 1444 unit</p>
           </div>
 
         </Container>

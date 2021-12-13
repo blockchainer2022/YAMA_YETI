@@ -41,12 +41,15 @@ body .MuiButtonBase-root {
   text-align: center;
 }
 .main-wrapper {
-  background-color: #010101;
+  background-image: url(./assets/Yama\ Yeti_Pixel\ Art_1@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #010101; */
 }
 .hero-section {
-  color: rgba(255, 255, 255, 0.87);
+  /* color: rgba(255, 255, 255, 0.87); */
   /* padding-bottom: 50px; */
-  height: 100vh;
+  min-height: 100vh;
 }
 .hero-section .MuiButton-containedPrimary {
   background: white;
