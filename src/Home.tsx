@@ -40,6 +40,10 @@ const useStyles = makeStyles((theme)=>({
   root: {
    textAlign:"center",
    paddingBottom:"50px",
+   "& .wallet-item":{
+     color:"#56088C",
+     fontWeight:"bold"
+   },
    "& h1":{
      fontSize:"30px",
      margin:"50px auto 30px auto",
