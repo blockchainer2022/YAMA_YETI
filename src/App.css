@@ -1,15 +1,8 @@
 @font-face {
-  font-family: "Galano Grotesque SemiBold";
-  src: url(./assets/font/GalanoGrotesqueSemiBold.woff);
+  font-family: "Pixeled Regular";
+  src: url(./assets/font/Pixeled\ Regular.woff);
 }
-@font-face {
-  font-family: "Roundish Toons", sans-serif;
-  src: url(./assets/font/Roundish-Toons.ttf.woff);
-}
-@font-face {
-  font-family: "Galano Grotesque Regular";
-  src: url(./assets/font/GalanoGrotesqueRegular.woff);
-}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,7 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Galano Grotesque Regular";
+  font-family: "Pixeled Regular" !important;
   font-size: 20px;
   /* background-image: url(./assets/Yama_Yeti_4.png);
   background-size: cover; */
@@ -30,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roundish Toons", sans-serif;
+  font-family: "Pixeled Regular" !important;
 }
 body .MuiButtonBase-root {
   /* font-family: "Roundish Toons", sans-serif; */
@@ -41,10 +34,10 @@ body .MuiButtonBase-root {
   text-align: center;
 }
 .main-wrapper {
-  background-image: url(./assets/Yama\ Yeti_Pixel\ Art_1@2x.png);
+  background-image: url(./assets/Group\ 2@2x.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: #010101; */
+  background-color: #000;
 }
 .hero-section {
   /* color: rgba(255, 255, 255, 0.87); */
@@ -52,18 +45,18 @@ body .MuiButtonBase-root {
   min-height: 100vh;
 }
 .hero-section .MuiButton-containedPrimary {
-  background: white;
+  /* background: white; */
   color: black;
   display: block;
 
   width: fit-content;
   margin-right: auto;
   margin-left: auto;
-  font-family: "Fixedsys Excelsior 3.01";
+  font-family: "Pixeled Regular" !important;
   margin-top: 20px;
 }
 .hero-section .MuiButton-containedPrimary span {
-  font-size: 20px;
+  font-size: 30px;
 }
 .hero-section .MuiButton-containedPrimary:hover {
   background-color: #fff;
@@ -90,19 +83,19 @@ body .MuiButtonBase-root {
   justify-content: space-between;
 }
 .wallet-content .MuiButton-contained {
-  font-family: "Fixedsys Excelsior 3.01";
+  font-family: "Pixeled Regular" !important;
 }
 .wallet-content p {
   margin-bottom: 1rem;
   margin-top: 0;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .wallet-content .MuiButtonBase-root span {
   justify-content: center;
 }
 .wallet-item {
-  font-size: 18px;
+  font-size: 24px;
 }
 .MuiDialogContent-root
   .MuiList-root.MuiList-padding

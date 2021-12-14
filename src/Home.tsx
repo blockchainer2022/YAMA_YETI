@@ -6,8 +6,8 @@ import { Button, CircularProgress, Snackbar ,Container} from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles";
 // import {RatitySection,TeamSection,AboutSection,RoadmapSection,FaqSection} from "./sections"
 import Alert from "@material-ui/lab/Alert";
-import Discord from "./assets/Discord.svg"
-import Twitter from "./assets/Twitter.svg"
+import Discord from "./assets/Discode.png"
+import Twitter from "./assets/Twitter.png"
 import * as anchor from "@project-serum/anchor";
 
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
@@ -78,17 +78,20 @@ const useStyles = makeStyles((theme)=>({
 
    },
    "&  .MuiButton-contained":{
-    fontFamily: "Roundish Toons, sans-serif",
-     fontSize:"14px",
-     backgroundColor:"#56088C",
+    fontFamily: "Pixeled Regular",
+    marginTop:"40px",
+    //  fontSize:"30px",
+     backgroundColor:"#9C0074",
      color:"white",
-      borderRadius:20,
+     padding:"7px 50px",
+      borderRadius:0,
       "&:hover":{
         backgroundColor:"#FF7900",
       },
     "& span":{
       display:"block",
-      fontSize:"18px",
+      fontSize:"26px",
+      fontWeight:"bold"
     
     }
 
@@ -98,6 +101,7 @@ const useStyles = makeStyles((theme)=>({
       paddingTop:"100px",
       paddingBottom:"30px",
       "& img":{
+        width:"600px",
         [theme.breakpoints.down("md")]: {
           maxWidth:"60vh",
           width:"90%",
@@ -114,6 +118,7 @@ const useStyles = makeStyles((theme)=>({
     margin:"auto"
   },
   icon:{
+    
     display:"flex",
     justifyContent:"center",
     marginBottom:20
@@ -123,26 +128,29 @@ const useStyles = makeStyles((theme)=>({
       marginLeft:10
 
       ,"& img":{
-        boxShadow:"0 5px 5px rgba(0,0,0,0.5)",
-        borderRadius:"20px"
+       width:"70px"
       }
     }
   },
+  bottomGroup:{
+  
+  },  
   bottom:{
     textAlign:"center",
-    marginTop:"40px",
-    marginBottom:"50px",
-    color:"#56088C",
+    marginTop:"10px",
+    marginBottom:"0px",
+    color:"white",
+    fontWeight:"bold",
     "& h6":{
-        fontSize:"24px",
+        fontSize:"18px",
         marginBottom:"0",
-        fontFamily: "Galano Grotesque SemiBold"
+       
     },
     "& p":{
       margin:0,
       maxWidth:"100%",
       marginTop:"0",
-      fontSize:"18px",
+      fontSize:"14px",
       
       
     }
@@ -320,15 +328,24 @@ const Home = (props: HomeProps) => {
         <div className={classes.logo}>  
           <img src={HeaderImage} alt="" />
         </div>
-        {/* <h1>Yama Yeti </h1> */}
-        <p>Yama Yeti NFT Collection.</p>   
+        
 
        <div className={classes.icon}>
           <a href="#"><img src={Discord} alt="" /></a>
           <a href="#"><img src={Twitter} alt="" /></a>
        </div>
-        <h4>Mint</h4>
-        <p  style={{marginTop:10,fontSize:18}}>Mint Time Is November 21st 18:00 UTC time</p>
+       <div className={classes.bottomGroup}> 
+
+       <div className={classes.bottom}>
+         <h6>Supply?</h6>
+            <b> 1444 Yetis</b>
+          </div>
+       <div className={classes.bottom}>
+            <h6>Minting cost?</h6>
+            <b>0.05 sol</b>
+          </div>
+       </div>
+       
        { difference < 0 ?
        <div>
        <div className={classes.walletWrapper}>
@@ -386,10 +403,7 @@ const Home = (props: HomeProps) => {
         )}
       
    
-          <div className={classes.bottom}>
-            <h6>Minting cost?</h6>
-            <p>0.05 sol for all 1444 unit</p>
-          </div>
+        
 
         </Container>
       </div>
