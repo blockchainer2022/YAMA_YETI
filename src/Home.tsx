@@ -92,7 +92,17 @@ const useStyles = makeStyles((theme)=>({
   },
   logo:{
       paddingTop:"100px",
-      paddingBottom:"30px"
+      paddingBottom:"30px",
+      "& img":{
+        [theme.breakpoints.down("md")]: {
+          maxWidth:"60vh",
+          width:"90%",
+          margin:"auto"
+
+         },
+        
+      }
+
   },
   walletWrapper:{
     maxWidth:"500px",
