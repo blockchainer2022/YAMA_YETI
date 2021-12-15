@@ -366,12 +366,12 @@ const Home = (props: HomeProps) => {
           <MintContainer>
           {!wallet ? (
            <div className="connect-wallet">
-            <ConnectButton fullWidth disabled>Mint Now</ConnectButton>
+            <ConnectButton fullWidth >Mint Now</ConnectButton>
           </div>
           ) :(
             <MintButton
-              // disabled={isSoldOut || isMinting || !isActive}
-              disabled
+               disabled={isSoldOut || isMinting || !isActive}
+              // disabled
               onClick={onMint}
               variant="contained"
          
