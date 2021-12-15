@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect, useState } from "react";
 import styled from "styled-components";
@@ -331,8 +332,8 @@ const Home = (props: HomeProps) => {
         
 
        <div className={classes.icon}>
-          <a href="#"><img src={Discord} alt="" /></a>
-          <a href="#"><img src={Twitter} alt="" /></a>
+          <a href="http://discord.gg/HA2gFYeU8B" target="_blank" ><img src={Discord} alt="" /></a>
+          <a  href="https://twitter.com/YamaYeti" target="_blank"><img src={Twitter} alt="" /></a>
        </div>
        <div className={classes.bottomGroup}> 
 
